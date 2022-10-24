@@ -1,0 +1,43 @@
+NORMAL MODE:
+- MOTIONS (can be combined with a count, like 2w, 3e, 10k):
+    - h - left
+    - j - down
+    - k - up
+    - l - right
+    - w - moves to the next first letter of a word
+    - e - moves to the next last letter of a word
+    - $ - moves to the end of the line
+    - gg - moves to the start of the file
+    - G - moves to the end of the file
+    - {count}G - moves the line count
+- OPERATIONS (need to be combined with a motion):
+    - d - deletes
+        d{quantifier}{motion}
+        - dw - deletes characters from the cursor to the next first letter of a word
+            - d3w - same as above, but three times
+        - de - deletes characters from the cursor to the next last letter of a word
+            - d2e
+        - d$ - deletes characters from the cursor to the end of the line
+        - dd - deletes a whole line
+    - c - change
+        - same as 'd', but enters insert mode after
+- OTHER :
+    - x - deletes character at the cursor    
+    - i - enters insert mode at the cursor
+    - A - enters insert mode at the end of the line
+    - a - enters insert mode at the
+    - u - undo last change
+    - U - undo all changes on the line
+    - CTRL-R - redo one change
+    - p - puts previously deleted text after the cursor
+    - r{x} - replaces character under the cursor with x 
+    - CTRL-G - filename and position
+    - / - searches forward
+        - use n to search for the same phrase again
+        - N to search for the same phrase in the opposite direction
+    - ? - searches backwards - n and N as above
+META :
+    - :q! - exiting the program without saving
+    - :wq! - save and exit
+    - ESC - switching to normal mode
+COMBOS :
