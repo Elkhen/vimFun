@@ -21,6 +21,8 @@ NORMAL MODE:
         - dd - deletes a whole line
     - c - change
         - same as 'd', but enters insert mode after
+    - y - yank (copy)
+        - can also be used with visual mode
 - OTHER :
     - x - deletes character at the cursor    
     - i - enters insert mode at the cursor
@@ -31,13 +33,24 @@ NORMAL MODE:
     - CTRL-R - redo one change
     - p - puts previously deleted text after the cursor
     - r{x} - replaces character under the cursor with x 
+    - R - enters replace mode, replaces characters from the cursor position to the end of the line
     - CTRL-G - filename and position
     - / - searches forward
         - use n to search for the same phrase again
         - N to search for the same phrase in the opposite direction
     - ? - searches backwards - n and N as above
+    - CTRL-O - changes cursor position to the one before
+    - CTRL-I - changes cursor position to the one after 
+    - % - finds matching parentheses
+    - v - enters visual mode
 META :
     - :q! - exiting the program without saving
     - :wq! - save and exit
+    - :s/one/two - substitutes first occurence of word "one" in line for word "two"
+        - :s/one/two/g - as above, but all occurences in a line
+        - :#,#s/one/two/g - as above, but all occurences between lines # and #
+        - :%s/one/two/g - as above, but all occurences in a file
+        - :%s/one/two/gc - as above, but asking for confirmation every change
+    - :!<command> - to use shell command like ls or cd
     - ESC - switching to normal mode
 COMBOS :
