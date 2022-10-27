@@ -21,8 +21,7 @@ NORMAL MODE:
         - dd - deletes a whole line
     - c - change
         - same as 'd', but enters insert mode after
-    - y - yank (copy)
-        - can also be used with visual mode
+    - y - yank (copy)- can be used with visual mode or as an operation
 - VISUAL MODE:
     - v - enters visual mode
     - SHIFT-V - enters visual mode linewise
@@ -31,21 +30,25 @@ NORMAL MODE:
     - i - enters insert mode at the cursor
     - A - enters insert mode at the end of the line
     - a - enters insert mode after the cursor
-- OTHER :
-    - x - deletes character at the cursor    
+- UNDO/REDO:
     - u - undo last change
     - U - undo all changes on the line
     - CTRL-R - redo one change
-    - p - puts previously deleted text after the cursor
-    - r{x} - replaces character under the cursor with x 
-    - R - enters replace mode, replaces characters from the cursor position to the end of the line
-    - CTRL-G - filename and position
+-COPY/PASTE:
+    - p - puts previously deleted or yanked text after the cursor
+    - y - yank (copy)- can be used with visual mode or as an operation
+- SEARCHING:
     - / - searches forward
         - use n to search for the same phrase again
         - N to search for the same phrase in the opposite direction
     - ? - searches backwards - n and N as above
     - CTRL-O - changes cursor position to the one before
     - CTRL-I - changes cursor position to the one after 
+- OTHER :
+    - x - deletes character at the cursor    
+    - r{x} - replaces character under the cursor with x 
+    - R - enters replace mode, replaces characters from the cursor position to the end of the line
+    - CTRL-G - filename and position
     - % - finds matching parentheses
 META :
     - :q! - exiting the program without saving
