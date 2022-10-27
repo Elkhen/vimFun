@@ -23,11 +23,16 @@ NORMAL MODE:
         - same as 'd', but enters insert mode after
     - y - yank (copy)
         - can also be used with visual mode
-- OTHER :
-    - x - deletes character at the cursor    
+- VISUAL MODE:
+    - v - enters visual mode
+    - SHIFT-V - enters visual mode linewise
+    - CTRL-V - enters viusal mode blockwise
+- INSERT MODE:
     - i - enters insert mode at the cursor
     - A - enters insert mode at the end of the line
-    - a - enters insert mode at the
+    - a - enters insert mode after the cursor
+- OTHER :
+    - x - deletes character at the cursor    
     - u - undo last change
     - U - undo all changes on the line
     - CTRL-R - redo one change
@@ -42,7 +47,6 @@ NORMAL MODE:
     - CTRL-O - changes cursor position to the one before
     - CTRL-I - changes cursor position to the one after 
     - % - finds matching parentheses
-    - v - enters visual mode
 META :
     - :q! - exiting the program without saving
     - :wq! - save and exit
