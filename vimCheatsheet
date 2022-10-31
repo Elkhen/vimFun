@@ -5,11 +5,16 @@ NORMAL MODE:
     - k - up
     - l - right
     - w - moves to the next first letter of a word
+    - b - moves to the previous first letter of a word
     - e - moves to the next last letter of a word
     - $ - moves to the end of the line
+    - 0 - moves to the start of the line
+    - ^ - moves to the first non-blank character of the current line
     - gg - moves to the start of the file
     - G - moves to the end of the file
     - {count}G - moves the line count
+    - CTRL-U - moves the cursor upward half a screen
+    - CTRL-D - moves the cursor upward half a screen
 - OPERATIONS (need to be combined with a motion):
     - d - deletes
         d{quantifier}{motion}
@@ -24,12 +29,15 @@ NORMAL MODE:
     - y - yank (copy)- can be used with visual mode or as an operation
 - VISUAL MODE:
     - v - enters visual mode
+        - v + > adds a tab to the whole selection, + < removes it
     - SHIFT-V - enters visual mode linewise
     - CTRL-V - enters viusal mode blockwise
 - INSERT MODE:
     - i - enters insert mode at the cursor
     - A - enters insert mode at the end of the line
     - a - enters insert mode after the cursor
+    - o - open a new line, below the current one, and enters insert mode
+    - O - open a new line, above the current one, and enters insert mode
 - UNDO/REDO:
     - u - undo last change
     - U - undo all changes on the line
@@ -37,21 +45,27 @@ NORMAL MODE:
 -COPY/PASTE:
     - p - puts previously deleted or yanked text after the cursor
     - y - yank (copy)- can be used with visual mode or as an operation
+        - yy - copies whole line
 - SEARCHING:
-    - / - searches forward
-        - use n to search for the same phrase again
-        - N to search for the same phrase in the opposite direction
-    - ? - searches backwards - n and N as above
-    - CTRL-O - changes cursor position to the one before
-    - CTRL-I - changes cursor position to the one after 
-    - * - search for word under the cursor forward
-    - # - same but backwards
+    ~ File 
+        - / - searches forward
+            - use n to search for the same phrase again
+            - N to search for the same phrase in the opposite direction
+        - ? - searches backwards - n and N as above
+        - CTRL-O - changes cursor position to the one before
+        - CTRL-I - changes cursor position to the one after 
+        - * - search for word under the cursor forward
+        - # - same but backwards
+    ~ Horizontal 
+        - f<char> - find a character after your cursor
+        - F<char> - find a character before your cursor
 - OTHER:
     - x - deletes character at the cursor    
     - r{x} - replaces character under the cursor with x 
     - R - enters replace mode, replaces characters from the cursor position to the end of the line
     - CTRL-G - filename and position
     - % - finds matching parentheses
+    - CTRL-E - scroll the window downwards
 META :
     - :q! - exiting the program without saving
     - :wq! - save and exit
