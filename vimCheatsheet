@@ -44,7 +44,9 @@ NORMAL MODE:
     - ? - searches backwards - n and N as above
     - CTRL-O - changes cursor position to the one before
     - CTRL-I - changes cursor position to the one after 
-- OTHER :
+    - * - search for word under the cursor forward
+    - # - same but backwards
+- OTHER:
     - x - deletes character at the cursor    
     - r{x} - replaces character under the cursor with x 
     - R - enters replace mode, replaces characters from the cursor position to the end of the line
@@ -59,5 +61,6 @@ META :
         - :%s/one/two/g - as above, but all occurences in a file
         - :%s/one/two/gc - as above, but asking for confirmation every change
     - :!<command> - to use shell command like ls or cd
-    - ESC - switching to normal mode
+    - :e <path> - to edit a file, path can be absolute or relative
+    - ESC/CTRL-C/CTRL-[ - switching to normal mode
 COMBOS :
