@@ -77,4 +77,7 @@ META :
     - :!<command> - to use shell command like ls or cd
     - :e <path> - to edit a file, path can be absolute or relative
     - ESC/CTRL-C/CTRL-[ - switching to normal mode
-COMBOS :
+COMMAND LINE:
+    - CTRL-R + " - pastes content of a yank into command line, also works in insert mode
+        - use CTRL-R + CTRL-O + " if there are literal control characters in the yank
+        - " is the sign for default register
