@@ -46,6 +46,9 @@ NORMAL MODE:
     - p - puts previously deleted or yanked text after the cursor
     - y - yank (copy)- can be used with visual mode or as an operation
         - yy - copies whole line
+    - "*p - pastes from clipboard
+    - "*yy - copies a line into clipboard
+     - overall * is a register used by windows clipboard and " is a register selecter in normal mode
 - SEARCHING:
     ~ File 
         - / - searches forward
