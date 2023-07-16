@@ -62,6 +62,8 @@ NORMAL MODE:
     ~ Horizontal 
         - f<char> - find a character after your cursor
         - F<char> - find a character before your cursor
+        - ; - repeats a f or F search
+        - . - repeats it in the other direction
 - OTHER:
     - x - deletes character at the cursor    
     - r{x} - replaces character under the cursor with x 
